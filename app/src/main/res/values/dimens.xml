@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_indent">16dp</dimen>
+    <dimen name="picture_horizontal_size">500sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="tittle_text_size">17sp</dimen>
+    <dimen name="start_button_angels">4dp</dimen>
+    <dimen name="start_button_height">40dp</dimen>
+
+</resources>

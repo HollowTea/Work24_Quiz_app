@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Небольшой опросник</string>
+    <string name="main_button">Продолжить</string>
+    <string name="survey_tittle">Пожалуйста, ответьте на несколько вопросов:</string>
+    <string name="back_button">Назад</string>
+    <string name="send_button">Отправить</string>
+    <string name="thanks_message_text">Благодарим за прохождение опроса!</string>
+    <string name="restart_quiz_button_text">Начать заново</string>
+    <string name="date_tittle_text_main_screen">Введите свою дату рождения</string>
+    <string name="date_of_birth_tittle_button">Ваша дата рождения</string>
+</resources>

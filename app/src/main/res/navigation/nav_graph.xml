@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.skillbox_hw_quiz.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_surveyScreen"
+            app:destination="@id/surveyScreen"
+            app:enterAnim="@anim/fade_in_animation"
+            app:exitAnim="@anim/fade_out_animation"
+            app:popEnterAnim="@anim/rotate_in_animation"
+            app:popExitAnim="@anim/rotate_out_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/surveyScreen"
+        android:name="com.example.skillbox_hw_quiz.ui.main.SurveyScreen"
+        android:label="fragment_survey_screen"
+        tools:layout="@layout/fragment_survey_screen">
+        <action
+            android:id="@+id/action_surveyScreen_to_mainFragment"
+            app:destination="@+id/mainFragment"
+            app:enterAnim="@anim/fade_in_animation"
+            app:exitAnim="@anim/fade_out_animation"
+            app:popEnterAnim="@anim/backstack_in_animation"
+            app:popExitAnim="@anim/backstack_out_animation"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_surveyScreen_to_resultsScreen"
+            app:destination="@id/resultsScreen"
+            app:enterAnim="@anim/translate_in_animation"
+            app:exitAnim="@anim/translate_out_animation"
+            app:popEnterAnim="@anim/backstack_in_animation"
+            app:popExitAnim="@anim/backstack_out_animation"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsScreen"
+        android:name="com.example.skillbox_hw_quiz.ui.main.ResultsScreen"
+        android:label="fragment_results_screen"
+        tools:layout="@layout/fragment_results_screen">
+        <action
+            android:id="@+id/action_resultsScreen_to_surveyScreen"
+            app:destination="@id/surveyScreen"
+            app:enterAnim="@anim/translate_in_animation"
+            app:exitAnim="@anim/translate_out_animation"
+            app:popEnterAnim="@anim/backstack_in_animation"
+            app:popExitAnim="@anim/backstack_out_animation"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+</navigation>

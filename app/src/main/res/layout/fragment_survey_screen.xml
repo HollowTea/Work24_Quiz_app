@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_indent"
+    tools:context=".ui.main.SurveyScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/survey_tittle"
+            android:textSize="@dimen/tittle_text_size" />
+
+        <com.example.skillbox_hw_quiz.ui.main.QuizCustomView
+            android:id="@+id/first_question_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.skillbox_hw_quiz.ui.main.QuizCustomView
+            android:id="@+id/second_question_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.skillbox_hw_quiz.ui.main.QuizCustomView
+            android:id="@+id/third_question_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/back_button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_answer_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:enabled="false"
+                android:text="@string/send_button" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

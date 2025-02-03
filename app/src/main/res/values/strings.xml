@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Light questionnaire</string>
+    <string name="main_button">Continue</string>
+    <string name="survey_tittle">"Please answer a few questions: "</string>
+    <string name="back_button">Back</string>
+    <string name="send_button">Send results</string>
+    <string name="thanks_message_text">"Thank you for completing the survey! "</string>
+    <string name="restart_quiz_button_text">Start again</string>
+    <string name="date_tittle_text_main_screen">Input your date of birth</string>
+    <string name="date_of_birth_tittle_button">Your date of birth</string>
+</resources>
